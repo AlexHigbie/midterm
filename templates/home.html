@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Today's top news from The New York Times</h3>
+        <ul>
+          <li ng-repeat='article in nCtl.articles'>
+          <img src='{{article.urlToImage}}' width="400" height="200"> <br>
+          Title: {{article.title}} <br> Description: {{article.description}} <br> <a href='{{article.url}}'>READ MORE</a> <br>  <br>
+
+          </li>
+        </ul>
+    </div>
+
+<!-- </div> -->
+
+<!-- <div class="container"> -->
+
+    <div class="col-md-6">
+      <h3>Today's top news from the Associated Press</h3>
+      <br>
+      <br>
+        <ul>
+          <li ng-repeat='article in nCtl.articlesHome2'><a href='{{article.url}}'>
+            {{article.title}}
+          <img src='{{article.urlToImage}}' width="400" height="200"> <br>
+           <br>{{article.description}} <br></a> <br>  <br>
+
+          </li>
+        </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,69 @@
+<!DOCTYPE>
+<html ng-app='newsApp'>
+  <head>
+    <title>News</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src='main.js'></script>
+    <script src='router.js'></script>
+    <link rel='stylesheet'href='main.css'>
+  </head>
+  <body ng-controller='newsController as nCtl'>
+
+  <div class='page-header'>
+    <h1>{{nCtl.title}} <small>The news you want</small></h1>
+  </div>
+
+    <ul class="nav nav-pills nav-justified">
+      <li><a href='#/'> Home</a></li>
+      <li><a href='#/Tech'>Tech</a></li>
+      <li><a href='#/Sports'>Sports</a></li>
+      <li><a href='http://espn.com'>US</a></li>
+      <li><a href='http://google.com'>World News</a></li>
+    </ul>
+    <br>
+    <br>
+
+    <!-- <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="..." alt="...">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>...</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+    <ng-view></ng-view>
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+  </body>
+
+  <footer>
+    Alex Higbie
+    <br>
+    Copyright 2017
+
+  </footer>
+
+</html>
